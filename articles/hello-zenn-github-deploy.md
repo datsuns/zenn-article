@@ -11,3 +11,8 @@ published: "true"
 コンテンツ！たぶん低品質だ！
 
 * `published`の`true`はダブルクォートしないと反応しなかった 
+
+# steps
+
+1. https://zenn.dev/zenn/articles/connect-to-github
+1. https://zenn.dev/zenn/articles/zenn-cli-guide
