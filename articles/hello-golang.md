@@ -123,3 +123,26 @@ func main() {
 	dump("dwarfs3", dwarfs3)
 }
 ```
+
+```go:list18-6_variadic.go
+package main
+
+import "fmt"
+
+func terraform(prefix string, worlds ...string) []string {
+	ret := make([]string, len(worlds))
+	for i := range worlds {
+		ret[i] = prefix + " " + worlds[i]
+	}
+	return ret
+}
+
+func main() {
+	twoWorlds := terraform("New", "Venus", "Mars")
+	fmt.Println(twoWorlds) // [New Venus New Mars]
+
+	planets := []string{"Venus", "Mars", "Jupiter"}
+	newPlanets := terraform("New", planets...)
+	fmt.Println(newPlanets) // [New Venus New Mars New Jupiter]
+}
+```
