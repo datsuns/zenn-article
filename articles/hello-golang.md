@@ -72,3 +72,54 @@ dwarfs = append(dwarfs, "Orcus")
 // 新たな規定配列を取り直す(可能性がある)のでappend()は
 // スライスを受け取ってスライスを返す形になってるのだと思う
 ```
+
+```go:list18-2_slice-dump.go
+package main
+
+import "fmt"
+
+func dump(label string, slice []string) {
+	fmt.Printf("%v: 長さ %v, 容量 %v %v\n", label, len(slice), cap(slice), slice)
+}
+func main() {
+	dwarfs := []string{"Ceres", "Pluto", "Hauma", "Makemake", "Eris"}
+	// dwarfs: 長さ 5, 容量 5 [Ceres Pluto Hauma Makemake Eris]
+	dump("dwarfs", dwarfs)
+	// dwarfs[1:2]: 長さ 1, 容量 4 [Pluto]
+	dump("dwarfs[1:2]", dwarfs[1:2])
+}
+```
+
+```go:list18-3_slice-append.go
+package main
+
+import "fmt"
+
+func dump(label string, slice []string) {
+	fmt.Printf("%v: 長さ %v, 容量 %v %v\n", label, len(slice), cap(slice), slice)
+}
+func main() {
+	// dwarfs: 長さ 5, 容量 5 [Ceres Pluto Hauma Makemake Eris]
+	dwarfs1 := []string{"Ceres", "Pluto", "Hauma", "Makemake", "Eris"}
+	dump("dwarfs1", dwarfs1)
+
+	// dwarfs2: 長さ 6, 容量 10 [Ceres Pluto Hauma Makemake Eris Orcus]
+	dwarfs2 := append(dwarfs1, "Orcus")
+	dump("dwarfs1", dwarfs1)
+	dump("dwarfs2", dwarfs2)
+
+	// dwarfs3: 長さ 9, 容量 10 [Ceres Pluto Hauma Makemake Eris Orcus Salacia Quaor Senda]
+	dwarfs3 := append(dwarfs2, "Salacia", "Quaor", "Senda")
+	dump("dwarfs1", dwarfs1)
+	dump("dwarfs2", dwarfs2)
+	dump("dwarfs3", dwarfs3)
+
+	// dwarfs1: 長さ 5, 容量 5 [Ceres Pluto Hauma Makemake Eris]
+	// dwarfs2: 長さ 6, 容量 10 [Ceres Pluto! Hauma Makemake Eris Orcus]
+	// dwarfs3: 長さ 9, 容量 10 [Ceres Pluto! Hauma Makemake Eris Orcus Salacia Quaor Senda]
+	dwarfs3[1] = "Pluto!"
+	dump("dwarfs1", dwarfs1)
+	dump("dwarfs2", dwarfs2)
+	dump("dwarfs3", dwarfs3)
+}
+```
