@@ -20,9 +20,39 @@ published: true
 
 ## 結論
 
+* 裏で配列(基底配列)が生成されている
+* スライスはあくまで基底配列への参照になっている
+
 ## メモ
 
 ```go
 // 配列宣言でのサイズ省略
 array := [...]{"Ceres", "Haumea", "Eris"}
 ```
+
+```go:list17-4_hyperspace.go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func hyperspace(worlds []string) {
+	fmt.Printf("%p\n", &worlds)
+	// アドレスはplanetsとは別
+	// 参照のアドレスが見えているので"そらそうだ"ろう
+	for i := range worlds {
+		worlds[i] = strings.TrimSpace(worlds[i])
+	}
+}
+
+func main() {
+	planets := []string{" Venus", "Earth ", " Mars"}
+	fmt.Printf("%p\n", &planets)
+
+	hyperspace(planets)
+	fmt.Println(strings.Join(planets, ""))
+}
+```
+
