@@ -151,6 +151,8 @@ func main() {
 
 ## 結論
 
+* そこまで目新しいものはなかった
+
 ## メモ
 
 * "マップ"って、「写像」らしい
@@ -289,5 +291,175 @@ func main() {
 	for k, v := range numOfAppearances {
 		fmt.Println(k, v)
 	}
+}
+```
+
+# Lesson20 チャレンジ:ライフのスライス
+
+## 結論
+
+* 
+
+## メモ
+
+* やっぱり↓はわかりにくい。。
+```go
+type Universe [][]bool
+
+func NewUniverse() Universe {
+	u := make(Universe, height)   // Universe型 x height ？？
+	for i := range u {
+		u[i] = make([]bool, width)
+	}
+	return u
+}
+```
+
+```go:lifegame.go
+// ポインタ使ってしまうあたりにcぽさが出てしまった
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+const (
+	width          = 80
+	height         = 15
+	seedPercentage = 25
+)
+
+type Universe [][]bool
+
+func NewUniverse() Universe {
+	u := make(Universe, height)
+	for i := range u {
+		u[i] = make([]bool, width)
+	}
+	return u
+}
+
+func (u Universe) writeBorder(c int) {
+	for w := 0; w < width; w++ {
+		fmt.Printf("%c", c)
+	}
+	fmt.Printf("\n")
+}
+
+func (u Universe) Show() {
+	u.writeBorder('=')
+	for h := 0; h < height; h++ {
+		for w := 0; w < width; w++ {
+			if u[h][w] {
+				fmt.Printf("#")
+			} else {
+				fmt.Printf(" ")
+			}
+		}
+		fmt.Printf("\n")
+	}
+	u.writeBorder('-')
+}
+
+func (u Universe) String() string {
+	var b byte
+	buf := make([]byte, 0, (width+1)*height)
+	for y := 0; y < height; y++ {
+		for x := 0; x < width; x++ {
+			b = ' '
+			if u.Alive(x, y) {
+				b = '*'
+			}
+			buf = append(buf, b)
+		}
+		buf = append(buf, '\n')
+	}
+	return string(buf)
+}
+
+func (u Universe) Seed() {
+	lives := height * width * seedPercentage / 100
+	last := height * width
+	for i := 0; i < lives; i++ {
+		n := rand.Intn(last)
+		u[n/width][n%width] = true
+	}
+}
+
+func (u Universe) Alive(x, y int) bool {
+	x = (x + width) % width
+	y = (y + height) % height
+	return u[y][x]
+}
+
+func (u Universe) Neighbors(x, y int) int {
+	ret := 0
+	type Pair struct {
+		xpos int
+		ypos int
+	}
+	targets := []Pair{
+		Pair{xpos: x - 1, ypos: y - 1},
+		Pair{xpos: x, ypos: y - 1},
+		Pair{xpos: x + 1, ypos: y - 1},
+		Pair{xpos: x - 1, ypos: y},
+		Pair{xpos: x + 1, ypos: y},
+		Pair{xpos: x - 1, ypos: y + 1},
+		Pair{xpos: x, ypos: y + 1},
+		Pair{xpos: x + 1, ypos: y + 1},
+	}
+	for _, t := range targets {
+		if u.Alive(t.xpos, t.ypos) {
+			ret++
+		}
+	}
+	return ret
+}
+
+func (u Universe) Next(x, y int) bool {
+	alive := u.Alive(x, y)
+	switch u.Neighbors(x, y) {
+	case 2:
+		if alive {
+			return true
+		} else {
+			return false
+		}
+	case 3:
+		return true
+	default:
+		return false
+	}
+}
+
+func Step(a, b Universe) {
+	for y := 0; y < height; y++ {
+		for x := 0; x < width; x++ {
+			if a.Next(x, y) {
+				b[y][x] = true
+			} else {
+				b[y][x] = false
+			}
+		}
+	}
+}
+
+func main() {
+	u := NewUniverse()
+	u2 := NewUniverse()
+	u.Seed()
+
+	var a, b *Universe
+	a = &u
+	b = &u2
+	for {
+		fmt.Print("\x0c", (*a).String())
+		time.Sleep(200 * time.Millisecond)
+		Step(*a, *b)
+		a, b = b, a
+	}
+
 }
 ```
