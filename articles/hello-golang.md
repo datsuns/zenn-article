@@ -260,3 +260,34 @@ func main() {
 	}
 }
 ```
+
+```go:training2_words.go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+var InputText = `
+As far as eye could reach he saw nothing but the stems of the great plants
+about him receding in the violet shade, and far overhead the multiple transparencey
+of huge leaves filtering the sunshine to the solemn splendour of twilight in which
+he walked.
+`
+
+func main() {
+	fmt.Printf("[%v]\n", InputText)
+	lower := strings.ToLower(InputText)
+	rawText := strings.ReplaceAll(strings.ReplaceAll(lower, ",", ""), ".", "")
+	words := strings.Fields(rawText)
+
+	numOfAppearances := make(map[string]int)
+	for _, w := range words {
+		numOfAppearances[w]++
+	}
+	for k, v := range numOfAppearances {
+		fmt.Println(k, v)
+	}
+}
+```
