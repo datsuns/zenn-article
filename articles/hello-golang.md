@@ -146,3 +146,117 @@ func main() {
 	fmt.Println(newPlanets) // [New Venus New Mars New Jupiter]
 }
 ```
+
+# Lesson19 守備範囲が広いマップ
+
+## 結論
+
+## メモ
+
+* "マップ"って、「写像」らしい
+* キーの順序に保証はない(実行するたびに変わるかもしれない)
+
+```go:list19-1_map.go
+package main
+
+import "fmt"
+
+func main() {
+	temperature := map[string]int{
+		"Earch": 15,
+		"Mars":  -65,
+	}
+
+	temp := temperature["Earch"]
+	fmt.Printf("平均すると、地球は%v℃.\n", temp)
+
+	temperature["Earch"] = 16
+	temperature["Venus"] = 464
+	fmt.Println(temperature) // map[Earch:16 Mars:-65 Venus:464]
+	moon := temperature["Moon"]
+	fmt.Println(moon) // 0
+
+	if moon2, ok := temperature["Moon"]; ok {
+		fmt.Printf("平均すると、月は%v℃.\n", moon2)
+	} else {
+		fmt.Println("月はどこ？") // reach to here
+	}
+}
+```
+
+```go:list19-2_whoops.go
+package main
+
+import "fmt"
+
+func main() {
+	planets := map[string]string{
+		"地球": "Sector ZZ9",
+		"火星": "Sector ZZ9",
+	}
+
+	planetsMarkII := planets
+	planets["地球"] = "whoops"
+	fmt.Println(planets)       // map[地球:whoops 火星:Sector ZZ9]
+	fmt.Println(planetsMarkII) // map[地球:whoops 火星:Sector ZZ9]
+
+	delete(planets, "地球")
+	fmt.Println(planets)       // map[火星:Sector ZZ9]
+	fmt.Println(planetsMarkII) // map[火星:Sector ZZ9]
+}
+```
+
+```go:list19-3_frequency.go
+package main
+
+import "fmt"
+
+func main() {
+	temperatures := []float64{
+		-28.0, 32.0, -31.0, -29.0, -23.0, -29.0, -28.0, -33.0,
+	}
+
+	frequency := make(map[float64]int)
+
+	for _, t := range temperatures {
+		frequency[t]++
+	}
+
+	for t, n := range frequency {
+		fmt.Printf("%+.2fの出現回数は%d回です\n", t, n)
+		// -28.00の出現回数は2回です
+		// +32.00の出現回数は1回です
+		// -31.00の出現回数は1回です
+		// -29.00の出現回数は2回です
+		// -23.00の出現回数は1回です
+		// -33.00の出現回数は1回です
+	}
+}
+
+```
+
+```go:list19-4_group.go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	temperatures := []float64{
+		-28.0, 32.0, -31.0, -29.0, -23.0, -29.0, -28.0, -33.0,
+	}
+
+	groups := make(map[float64][]float64)
+
+	for _, t := range temperatures {
+		g := math.Trunc(t/10) * 10
+		groups[g] = append(groups[g], t)
+	}
+
+	for g, temperatures := range groups {
+		fmt.Printf("%v: %v\n", g, temperatures)
+	}
+}
+```
