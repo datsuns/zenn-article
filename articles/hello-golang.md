@@ -298,7 +298,7 @@ func main() {
 
 ## 結論
 
-* 
+* ライフゲーム！
 
 ## メモ
 
@@ -461,5 +461,79 @@ func main() {
 		a, b = b, a
 	}
 
+}
+```
+
+# Lesson21 構造体
+
+## 結論
+
+* 
+
+## メモ
+
+```go:list21-10_json-tags.go
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"os"
+)
+
+func main() {
+	type location struct {
+		Lat  float64 `json:"latitude"`
+		Long float64 `json:"longitude"`
+	}
+
+	curiosity := location{-4.5895, 137.4417}
+	bytes, err := json.Marshal(curiosity)
+	exitOnError(err)
+
+	fmt.Println(string(bytes))
+}
+
+func exitOnError(err error) {
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+}
+```
+
+# Lesson22 Goにはクラスがないけれど
+
+## 結論
+
+* 構造体にメソッドを「結びつける」
+* 「ほぼOOPな事ができる」とはあるし、それはわかる
+* じゃぁ何が違うの・・・？の理解はまだもう少し
+
+## メモ
+
+``` go:list22-2_coordinate.go
+package main
+
+import "fmt"
+
+type coordinate struct {
+	d, m, s float64
+	h       rune
+}
+
+func (c coordinate) decimal() float64 {
+	sign := 1.0
+	switch c.h {
+	case 'S', 'W', 's', 'w':
+		sign = -1
+	}
+	return sign * (c.d + c.m/60 + c.s/3600)
+}
+
+func main() {
+	lat := coordinate{4, 35, 22.2, 'S'}
+	long := coordinate{137, 26, 30.12, 'E'}
+	fmt.Println(lat.decimal(), long.decimal())
 }
 ```
