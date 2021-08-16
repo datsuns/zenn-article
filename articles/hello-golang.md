@@ -537,3 +537,123 @@ func main() {
 	fmt.Println(lat.decimal(), long.decimal())
 }
 ```
+
+# Lesson23 組み立てと転送
+
+## 結論
+
+* 転送？
+   * 内部の構造体のメソッドを呼ぶような事を「転送」と呼んでいる -> list23-3
+* 埋め込み
+   * 構造体にフィールド名無しに型名を指定する
+   * 埋め込んだメソッドはコンパイル時に解決するぽい
+      * (当然、)メソッド名が重複するなど解決仕切れなければコンパイルエラーになる
+   * 埋め込みはフィールドも範囲
+
+## メモ
+
+* コンポジションとは、大きな構造を小さな構造に分解して組み合わせる技法
+
+```go:list23-3_average.go
+type temperature struct {
+   high, low celsius
+}
+
+func (t temperature) average() float64 {
+   // ~~~~
+   return 0.0
+}
+
+type report struct {
+   temp temperature
+}
+
+func (r report) average() float64{
+   return r.temp.average() // これを「転送」と呼んでいる
+}
+
+type celsius float64
+```
+
+```go:list23-4_embed.go
+package main
+
+import "fmt"
+
+type temperature struct {
+	high, low float64
+}
+
+func (t temperature) average() float64 {
+	return (t.high + t.low) / 2
+}
+
+type location struct {
+	lat, long float64
+}
+
+type report struct {
+	sol int
+	temperature // "埋め込み" := フィールド名無しに型を指定する
+	location
+}
+
+func main() {
+	report := report{
+		sol:         15,
+		location:    location{-4.5895, 137.4417},
+		temperature: temperature{high: -1.0, low: -78.0},
+	}
+	fmt.Printf("平均 %v℃\n", report.average())
+}
+```
+
+# Lesson24 インターフェース
+
+(だんだんわかってないところに入ってきた)
+
+## 結論
+
+* まだわかってる範囲だった
+
+## メモ
+
+* インターフェース型は「型が何を行えるか？に注目」したもの
+
+# Lesson26 ポインタ
+
+## 結論
+
+* `map`は実はポインタらしい 
+   * `func f(m *map[int]string)` みたいなのは余計な定義
+
+## メモ
+
+* `ptr++`みたいな演算はできない
+
+```go:list26-13_method.go
+package main
+
+import "fmt"
+
+type X struct {
+	age int
+}
+
+func (x X) f() {
+	x.age++
+}
+
+func (x *X) g() {
+	x.age++
+}
+
+func main() {
+	x := X{age: 10}
+	fmt.Printf("%+v\n", x) //=> 10
+	x.f()
+	fmt.Printf("%+v\n", x) //=> 10
+	x.g()
+	fmt.Printf("%+v\n", x) //=> 11
+}
+```
