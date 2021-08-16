@@ -626,6 +626,10 @@ func main() {
 
 * `map`は実はポインタらしい 
    * `func f(m *map[int]string)` みたいなのは余計な定義
+* スライスの実現 := {配列へのポインタ, 長さ, 容量}
+   * `type Slice struct{ p *[]array, len int, depth int}`
+   * スライスそのものを書き換える必要がある場合のみ、スライスのポインタが意味を成してくる
+   * ただしスライスは**それを変更するよりコピーを生成して編集する**方がよさそう
 
 ## メモ
 
@@ -656,4 +660,39 @@ func main() {
 	x.g()
 	fmt.Printf("%+v\n", x) //=> 11
 }
+```
+
+```go:list26-20_interface.go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+type talker interface {
+	talk() string
+}
+
+func shout(t talker) {
+	louder := strings.ToUpper(t.talk())
+	fmt.Println(louder)
+}
+
+type laser int
+
+func (l *laser) talk() string {
+	return "laser pointer"
+}
+
+//func (l laser) talk() string {
+//	return "laser instance"
+//}
+
+func main() {
+	per := laser(2)
+	//shout(per)
+	shout(&per)
+}
+ 
 ```
