@@ -696,3 +696,59 @@ func main() {
 }
  
 ```
+
+# Lesson27 nilをめぐる騒動
+
+## 結論
+
+
+## メモ
+
+* レシーバがポインタなメソッドに対して、nilインスタンスでメソッドを呼べる
+   * 呼んだ先で死ぬ。
+* nilスライスと空のスライスは交換可能な扱いにされることが多い
+   * 正解はわからんけど「そういうもんかも」くらいにはとらえておく
+
+```go:練習問題_knight.go
+package main
+
+import "fmt"
+
+type item struct {
+}
+
+type character struct {
+	leftHand *item
+}
+
+func (c *character) hasItem() bool {
+	if c.leftHand == nil {
+		return false
+	} else {
+		return true
+	}
+}
+
+func (c *character) pickup(i *item) {
+	c.leftHand = i
+}
+
+func (c *character) give(to *character) {
+	wk := c.leftHand
+	c.leftHand = nil
+	to.leftHand = wk
+}
+
+func main() {
+	something := &item{}
+	knight := &character{}
+	arser := &character{}
+	fmt.Printf("arser:%v, knight:%v\n", arser.hasItem(), knight.hasItem())
+
+	arser.pickup(something)
+	fmt.Printf("arser:%v, knight:%v\n", arser.hasItem(), knight.hasItem())
+
+	arser.give(knight)
+	fmt.Printf("arser:%v, knight:%v\n", arser.hasItem(), knight.hasItem())
+}
+```
