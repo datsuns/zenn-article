@@ -753,3 +753,64 @@ func main() {
 	fmt.Printf("arser:%v, knight:%v\n", arser.hasItem(), knight.hasItem())
 }
 ```
+
+# Lesson28 エラーは人の常
+
+## 結論
+
+* 
+
+## メモ
+
+* 型アサーション: `<var>.(<type-name>)`
+* `panic`は`defer`を実行してくれる。`os.Exit()`はそうではない。
+
+
+# Lesson29 数独のルール
+
+## 結論
+
+* 
+
+## メモ
+
+* またこんど😀
+
+# Unit7 平行プログラミング
+
+# Lesson30 ゴルーチンと並行性
+
+## 結論
+
+* make(chan string)
+
+## メモ
+
+* パイプラインはいわゆる並列実行
+* channelのclose()もあるのか
+   * 二重close()はpanicになるもよう
+
+
+# Lesson31 競合状態
+
+## 結論
+
+* 
+
+## メモ
+
+* コンパイラで競合状態をチェックできるらしい
+   * https://golang.org/doc/articles/race_detector
+
+
+# Lesson32 チャレンジ:火星で生きるもの
+
+## 結論
+
+* 練習問題。 
+
+# 感想
+
+* channelとか文法を改めて見直せたのは良かった
+   * なんとなくで書いてきたので
+* 次はEffectiveGo、あたり？
