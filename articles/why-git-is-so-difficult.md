@@ -3,7 +3,7 @@ title: "なぜgitは難しいのか"
 emoji: "⛏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [git]
-published: "true"
+published: true
 ---
 
 割とそういう話を（特に会社の同僚から）聞いたりするので「なぜ難しいと感じるのか？」をちょっと考えてみました。
