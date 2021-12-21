@@ -24,6 +24,8 @@ published: true
 
 # とりあえず見積もると・・・
 
+![retrospective-catalog](https://storage.googleapis.com/zenn-user-upload/501118e508a7-20211222.png)
+
 * 59パターン🙋
 * 1素振り/日で２ヶ月🙋🙋
 * 1素振り/2日で４ヶ月🙋🙋🙋
