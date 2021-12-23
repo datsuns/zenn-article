@@ -4,4 +4,11 @@ preview:
 update:
 	npm install zenn-cli@latest
 
-.PHONY: preview update
+setup:
+	npm init --yes
+	npm install zenn-cli
+
+new:
+	npx zenn new:article --slug <slug>
+
+.PHONY: preview update setup new
