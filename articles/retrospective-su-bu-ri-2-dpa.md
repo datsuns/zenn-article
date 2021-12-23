@@ -9,13 +9,16 @@ published: true
 [#0 && 記事リスト](/datsuns/articles/retrospective-su-bu-ri-0.md)
 カタログ作者さんのQiita記事
 https://qiita.com/viva_tweet_x/items/cc3bad3bd298406b6cc7
+出典
+https://hurikaeri.booth.pm/items/2656128
 
 # 素振りターゲット
 
 **\#2 DPA**の素振りをします。DPAは「Design the Partnershp Alliance」の略。
 カテゴリは「ふりかえりの場を作る」
 
-![target-2](/images/retrospective-su-bu-ri/2-target.png)
+![target](/images/retrospective-su-bu-ri/2-target.png)
+![pattern](/images/retrospective-su-bu-ri/2-pattern.png)
 
 # DPAとは
 
