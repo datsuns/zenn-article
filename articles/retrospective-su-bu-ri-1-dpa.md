@@ -7,4 +7,4 @@ published: true
 ---
 
 
-[retrospective-catalog](/articles/retrospective-su-bu-ri-0.md)
+[retrospective-catalog](/datsuns/articles/retrospective-su-bu-ri-0.md)
