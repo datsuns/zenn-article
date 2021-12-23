@@ -1,5 +1,5 @@
 ---
-title: "ふりかえりカタログ素振り #0"
+title: "ふりかえりカタログ素振り #0 && リスト"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["retrospective", "ふりかえり", "ふりかえりカタログ"]
@@ -34,3 +34,8 @@ published: true
 おけ。年末年始あるしな！
 
 つづく。（というかまだ始まってない）
+
+# 記事リスト
+
+* 進捗: 1 / 59
+* [#1 DPA](/datsuns/articles/retrospective-su-bu-ri-1-dpa.md)
