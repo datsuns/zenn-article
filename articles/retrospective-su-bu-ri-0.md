@@ -41,6 +41,6 @@ https://qiita.com/viva_tweet_x/items/cc3bad3bd298406b6cc7
 
 # 記事リスト
 
-* 進捗: 1 / 70
+* 進捗: 2 / 70
 * [#1 Norm Kerthの最優先指令](/datsuns/articles/retrospective-su-bu-ri-1-norm-kerth.md)
 * [#2 DPA](/datsuns/articles/retrospective-su-bu-ri-2-dpa.md)
