@@ -24,12 +24,13 @@ published: true
 
 # とりあえず見積もると・・・
 
-![retrospective-catalog](/images/retrospective-su-bu-ri/list-all.png)
+![retrospective-catalog-1](/images/retrospective-su-bu-ri/list-all-1.png)
+![retrospective-catalog-2](/images/retrospective-su-bu-ri/list-all-2.png)
 
 
-* 59パターン🙋
-* 1素振り/日で２ヶ月🙋🙋
-* 1素振り/2日で４ヶ月🙋🙋🙋
+* 70パターン🙋
+* 1素振り/日で２ヶ月半🙋🙋
+* 1素振り/2日で１ヶ月半🙋🙋🙋
 
 おけ。年末年始あるしな！
 
@@ -37,5 +38,5 @@ published: true
 
 # 記事リスト
 
-* 進捗: 1 / 59
-* [#1 DPA](/datsuns/articles/retrospective-su-bu-ri-1-dpa.md)
+* 進捗: 1 / 70
+* [#1 Norm Kerthの最優先指令](/datsuns/articles/retrospective-su-bu-ri-1-norm-kerth.md)
