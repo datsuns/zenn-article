@@ -5,3 +5,6 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["retrospective", "ふりかえり", "ふりかえりカタログ"]
 published: true
 ---
+
+
+[retrospective-catalog](/articles/retrospective-su-bu-ri-0.md)
