@@ -11,10 +11,13 @@ published: true
 
 # やること
 
-* [ふりかえりカタログ](https://qiita.com/viva_tweet_x/items/cc3bad3bd298406b6cc7)を順に素振りしていく
+* ふりかえりカタログを順に素振りしていく
+
+https://qiita.com/viva_tweet_x/items/cc3bad3bd298406b6cc7
+
 * 可能なら素振りの結果もパターンにしたい
 * 特にどれも知らないので順番通りにやっていくと思う
-* こなれてきたら順番は帰るかもしれない
+* こなれてきたら順番は変えるかもしれない
 
 # でもって
 
@@ -40,3 +43,4 @@ published: true
 
 * 進捗: 1 / 70
 * [#1 Norm Kerthの最優先指令](/datsuns/articles/retrospective-su-bu-ri-1-norm-kerth.md)
+* [#2 DPA](/datsuns/articles/retrospective-su-bu-ri-2-dpa.md)

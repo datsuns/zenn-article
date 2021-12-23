@@ -7,11 +7,13 @@ published: true
 ---
 
 [#0 && 記事リスト](/datsuns/articles/retrospective-su-bu-ri-0.md)
+作者さんのQiita記事
+https://qiita.com/viva_tweet_x/items/cc3bad3bd298406b6cc7
 
 # 素振りターゲット
 
-\#1 **DPA**の素振りをします
+\#2 **DPA**の素振りをします
 
-![target-1](/images/retrospective-su-bu-ri/1-target.png)
+![target-2](/images/retrospective-su-bu-ri/2-target.png)
 
 # DPAとは
