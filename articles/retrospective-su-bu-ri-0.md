@@ -23,6 +23,9 @@ https://hurikaeri.booth.pm/items/2656128
 * 特にどれも知らないので順番通りにやっていくと思う
 * こなれてきたら順番は変えるかもしれない
 
+# 「素振り」の定義
+
+
 # でもって
 
 ものすごく今更ながら、改めて「"ふりかえり"は未来に向いた活動」というのを再認識。
@@ -46,7 +49,7 @@ https://hurikaeri.booth.pm/items/2656128
 
 # 記事リスト
 
-* 進捗: 7 / 70
+* 進捗: 8 / 70
 * [#1 Norm Kerthの最優先指令](/datsuns/articles/retrospective-su-bu-ri-1-norm-kerth.md)
 * [#2 DPA](/datsuns/articles/retrospective-su-bu-ri-2-dpa.md)
 * [#3 チームの心得](/datsuns/articles/retrospective-su-bu-ri-3-team-mind.md)
@@ -54,4 +57,6 @@ https://hurikaeri.booth.pm/items/2656128
 * [#5 信号機](/datsuns/articles/retrospective-su-bu-ri-5-traffic-light.md)
 * [#6 Good&New](/datsuns/articles/retrospective-su-bu-ri-6-good-and-new.md)
 * [#7 Keep + W(わかったこと)](/datsuns/articles/retrospective-su-bu-ri-7-keep-plus-w.md)
+* [#8 #8 一言チェックイン(亜種)](/datsuns/articles/retrospective-su-bu-ri-8-checkin-by-single-word.md)
+
 
