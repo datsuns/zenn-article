@@ -1,5 +1,5 @@
 preview:
-	npx zenn preview
+	npx zenn preview --port 8000
 
 update:
 	npm install zenn-cli@latest
