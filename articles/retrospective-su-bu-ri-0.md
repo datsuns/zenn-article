@@ -72,4 +72,5 @@ https://hurikaeri.booth.pm/items/2656128
 * [#14 チームストーリー(過去)](/datsuns/articles/retrospective-su-bu-ri-14-team-story-past.md)
 * [#15 喜、怒、哀](/datsuns/articles/retrospective-su-bu-ri-15-mad-sad-glad.md)
 * [#16 カラーコードドット](/datsuns/articles/retrospective-su-bu-ri-16-color-code-dot.md)
+* [#17 ストレングス・トーク](/datsuns/articles/retrospective-su-bu-ri-17-strength-talk.md)
 
