@@ -14,7 +14,7 @@ https://hurikaeri.booth.pm/items/2656128
 
 # 素振りターゲット
 
-「**\#12 感情グラフ**」の素振りをします。
+「**\#13 感情グラフ**」の素振りをします。
 カテゴリは「ふりかえりの場を作る」「出来事を思い出す」
 
 ![target](/images/retrospective-su-bu-ri/13-target.png)
