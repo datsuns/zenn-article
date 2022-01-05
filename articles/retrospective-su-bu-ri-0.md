@@ -54,7 +54,7 @@ https://hurikaeri.booth.pm/items/2656128
 
 # 記事リスト
 
-* 進捗: 20 / 71
+* 進捗: 21 / 71
 * [#1 Norm Kerthの最優先指令](/datsuns/articles/retrospective-su-bu-ri-1-norm-kerth.md)
 * [#2 DPA](/datsuns/articles/retrospective-su-bu-ri-2-dpa.md)
 * [#3 チームの心得](/datsuns/articles/retrospective-su-bu-ri-3-team-mind.md)
@@ -76,4 +76,5 @@ https://hurikaeri.booth.pm/items/2656128
 * [#18 小さなカイゼンアイデア](/datsuns/articles/retrospective-su-bu-ri-18-marginal-gains.md)
 * [#19 斜に構える、構えないを繰り返す](/datsuns/articles/retrospective-su-bu-ri-19-nihil-and-honest.md)
 * [#20 Starfish](/datsuns/articles/retrospective-su-bu-ri-20-starfish.md)
+* [#21 Small Starfish](/datsuns/articles/retrospective-su-bu-ri-21-small-starfish.md)
 
