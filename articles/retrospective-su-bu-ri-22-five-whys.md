@@ -3,7 +3,7 @@ title: "ふりかえりカタログ素振り #22 5つのなぜ"
 emoji: "🌊"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["retrospective", "ふりかえり", "ふりかえりカタログ"]
-published: false
+published: true
 ---
 
 [#0 && 記事リスト](/datsuns/articles/retrospective-su-bu-ri-0.md)
@@ -14,19 +14,15 @@ https://hurikaeri.booth.pm/items/2656128
 
 # 素振りターゲット
 
-「**\#21 Small Starfish**」の素振りをします。
-カテゴリは「アイデアを出し合う」
+「**\#22 5つのなぜ**」の素振りをします。
+カテゴリは「出来事を思い出す」「アイデアを出し合う」
 
-![target](/images/retrospective-su-bu-ri/21-target.png)
-![pattern](/images/retrospective-su-bu-ri/21-pattern.png)
-
-原典リンク
-https://www.funretrospectives.com/starfish/
-
+![target](/images/retrospective-su-bu-ri/22-target.png)
+![pattern](/images/retrospective-su-bu-ri/22-pattern.png)
 
 # これはなに？
 
-* Start(はじめるもの)とStop(やめるもの)の無い[#20 Starfish](/datsuns/articles/retrospective-su-bu-ri-20-starfish.md)
+* みんな大好きなぜなぜ分析
 
 # 想定所要時間(3-4人チーム)
 
@@ -34,15 +30,17 @@ https://www.funretrospectives.com/starfish/
 
 # 感想
 
-* **Start(try)が無くても「ふりかえり」は成立する**
+* やりかたはおなじみのもの。
 
 # 良い点
 
-* 義務感からいくらか解放されるかもしれない
+* たいていの人がやり方を知ってる
+* そうか**良かった点に対して分析**してもいいんだよね。
 
 # 難しい点
 
-* やってて物足りなくなったら[#20 Starfish](/datsuns/articles/retrospective-su-bu-ri-20-starfish.md)に移行すればよさそう
+* 「がんばります」に帰着させない
+* 過去の経験から嫌悪感があったりするかも
 
 # はてな？
 
@@ -50,4 +48,6 @@ https://www.funretrospectives.com/starfish/
 
 # やってみたい度(1~5)
 
-5点
+1点
+あえてやる必要はないかも。
+「問題vs我々」に持っていけるか？の訓練としてやるにはよさそう。

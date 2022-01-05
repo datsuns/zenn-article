@@ -77,5 +77,5 @@ https://hurikaeri.booth.pm/items/2656128
 * [#19 斜に構える、構えないを繰り返す](/datsuns/articles/retrospective-su-bu-ri-19-nihil-and-honest.md)
 * [#20 Starfish](/datsuns/articles/retrospective-su-bu-ri-20-starfish.md)
 * [#21 Small Starfish](/datsuns/articles/retrospective-su-bu-ri-21-small-starfish.md)
-* [#21 Small Starfish](/datsuns/articles/tmp/tmp.md)
+* [#22 5つのなぜ](/datsuns/articles/retrospective-su-bu-ri-22-five-whys.md)
 
