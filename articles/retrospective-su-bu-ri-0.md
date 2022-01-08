@@ -80,5 +80,5 @@ https://hurikaeri.booth.pm/items/2656128
 * [#22 5つのなぜ](/datsuns/articles/retrospective-su-bu-ri-22-five-whys.md)
 * [#23 Celebration Grid](/datsuns/articles/retrospective-su-bu-ri-23-celebration-grid.md)
 * [#24 学びと成長](/datsuns/articles/retrospective-su-bu-ri-24-learn-and-growth.md)
-* [#25 Win/Learn/Try](/datsuns/articles/retrospective-su-bu-ri-23-win-learn-try.md)
+* [#25 Win/Learn/Try](/datsuns/articles/retrospective-su-bu-ri-25-win-learn-try.md)
 
