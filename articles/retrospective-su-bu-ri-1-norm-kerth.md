@@ -3,7 +3,7 @@ title: "ふりかえりカタログ素振り #1 Norm Kerthの最優先指令"
 emoji: "🐷"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["retrospective", "ふりかえり", "ふりかえりカタログ"]
-published: false
+published: true
 ---
 
 [#0 && 記事リスト](/datsuns/articles/retrospective-su-bu-ri-0.md)
