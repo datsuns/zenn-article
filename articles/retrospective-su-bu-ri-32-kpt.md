@@ -14,7 +14,7 @@ https://hurikaeri.booth.pm/items/2656128
 
 # 素振りターゲット
 
-「**\#31 555**」の素振りをします。
+「**\#32 KPT**」の素振りをします。
 カテゴリは「出来事を思い出す」「アイデアを出し合う」「アクションを決める」
 
 ![target](/images/retrospective-su-bu-ri/32-target.png)
