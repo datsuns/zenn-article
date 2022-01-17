@@ -1,5 +1,5 @@
 ---
-title: "ふりかえりカタログ素振り #32 KPTA" 
+title: "ふりかえりカタログ素振り #33 KPTA" 
 emoji: "😎"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["retrospective", "ふりかえり", "ふりかえりカタログ"]

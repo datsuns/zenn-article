@@ -89,4 +89,5 @@ https://hurikaeri.booth.pm/items/2656128
 * [#31 555](/datsuns/articles/retrospective-su-bu-ri-31-triple-nickels.md)
 * [#32 KPT](/datsuns/articles/retrospective-su-bu-ri-32-kpt.md)
 * [#33 KPTA](/datsuns/articles/retrospective-su-bu-ri-33-kpta.md)
+* [#34 お気持ちから始めるKPT](/datsuns/articles/retrospective-su-bu-ri-34-kpt-on-my-mind.md)
 
