@@ -69,5 +69,5 @@ https://www.jmac.co.jp/data/pdf/rd4-01_details.pdf
 
 # やってみたい度(1~5)
 
-5点
-１回やってみたい
+4点
+[#36 YWTM](/datsuns/articles/retrospective-su-bu-ri-36-ywtm.md)の方が良さそうなので5→4に変更
