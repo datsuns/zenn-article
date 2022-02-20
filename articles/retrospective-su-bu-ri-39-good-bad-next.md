@@ -18,7 +18,7 @@ https://hurikaeri.booth.pm/items/2656128
 カテゴリは「出来事を思い出す」「アイデアを出し合う」「アクションを決める」
 
 ![target](/images/retrospective-su-bu-ri/39-target.png)
-![pattern](/images/retrospective-su-bu-ri/38-pattern.png)
+![pattern](/images/retrospective-su-bu-ri/39-pattern.png)
 
 
 # これはなに？
