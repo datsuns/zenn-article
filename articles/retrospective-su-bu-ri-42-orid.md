@@ -20,9 +20,6 @@ https://hurikaeri.booth.pm/items/2656128
 ![target](/images/retrospective-su-bu-ri/42-target.png)
 ![pattern](/images/retrospective-su-bu-ri/42-pattern.png)
 
-原典リンク
-https://retrospectivewiki.org/index.php?title=Everyday_Retrospective
-
 
 # これはなに？
 

@@ -54,7 +54,7 @@ https://hurikaeri.booth.pm/items/2656128
 
 # 記事リスト
 
-* 進捗: 42 / 71
+* 進捗: 43 / 71
 * [#1 Norm Kerthの最優先指令](/datsuns/articles/retrospective-su-bu-ri-1-norm-kerth.md)
 * [#2 DPA](/datsuns/articles/retrospective-su-bu-ri-2-dpa.md)
 * [#3 チームの心得](/datsuns/articles/retrospective-su-bu-ri-3-team-mind.md)
@@ -98,4 +98,5 @@ https://hurikaeri.booth.pm/items/2656128
 * [#40 Good,Bad,Ideas,Action](/datsuns/articles/retrospective-su-bu-ri-40-good-bad-ideas-action.md)
 * [#41 Good,Bad,Change](/datsuns/articles/retrospective-su-bu-ri-41-good-bad-change.md)
 * [#42 ORID](/datsuns/articles/retrospective-su-bu-ri-42-orid.md)
+* [#43 4Ls](/datsuns/articles/retrospective-su-bu-ri-43-4ls.md)
 
