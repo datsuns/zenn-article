@@ -97,7 +97,7 @@ https://hurikaeri.booth.pm/items/2656128
 * [#39 Good,Bad,Next](/datsuns/articles/retrospective-su-bu-ri-39-good-bad-next.md)
 * [#40 Good,Bad,Ideas,Action](/datsuns/articles/retrospective-su-bu-ri-40-good-bad-ideas-action.md)
 * [#41 Good,Bad,Change](/datsuns/articles/retrospective-su-bu-ri-41-good-bad-change.md)
-* [#42 ORID](/datsuns/articles/retrospective-su-bu-ri-42-orid.md)
-* [#43 4Ls](/datsuns/articles/retrospective-su-bu-ri-43-4ls.md)
-* [#44 3Ls](/datsuns/articles/retrospective-su-bu-ri-44-3ls.md)
+* [#42 ORID](/datsuns/articles/retrospective-su-bu-ri-42-orid)
+* [#43 4Ls](/datsuns/articles/retrospective-su-bu-ri-43-4ls)
+* [#44 3Ls](/articles/retrospective-su-bu-ri-44-3ls)
 
