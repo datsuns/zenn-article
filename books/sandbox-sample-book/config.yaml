@@ -1,0 +1,12 @@
+title: "【検証用】Sandbox Book（非公開）"
+summary: "ZennのBook形式におけるチャプター間リンクや構成の動作確認用サンプルです。"
+topics:
+  - "zenn"
+  - "markdown"
+published: false
+price: 0
+# チャプターのファイル名（拡張子 .md を除く）を順番に並べます
+chapters:
+  - 01-introduction
+  - 02-chapter-links
+  - 03-conclusion
